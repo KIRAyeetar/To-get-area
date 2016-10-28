@@ -6,25 +6,30 @@ public class Shape extends Area{
      public double base;
      public double high;
      public double wide;
-
+     public double area;
+    public void getArea(){};
     public double r(){
         this.r=r;
         return r;
     }
-    public void getRoundArea(){
+    public void getRoundArea (){
         final double pi=3.14;
         this.area=r*r*pi;
         System.out.println("圆形面积为："+area);
     }
+
+
     public double wide(){
         this.wide=wide;
         return base;
     }
 
-    public void getSquareArea(){
+    public void getSquareArea (){
         area=wide*wide;
         System.out.println("正方形面积为："+area);
     }
+
+
     public double high(){
         this.high=high;
         return high;
